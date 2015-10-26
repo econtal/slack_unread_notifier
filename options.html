@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Slack Unread Message Checker Options</title>
+	<style type="text/css" media="screen">
+		body {
+		  width: 100%;
+		  background: #fafafa;
+		}
+		h1 {
+  		  font-size: 18px;
+		  font-weight: bold;
+		}
+		.centered {
+		  width: 100%;
+		  text-align: center;
+		}
+		.centered table {
+		  margin: 0 auto;
+		  text-align: left;
+		}
+		.lbl {
+		  text-align: right;
+		}
+		#apitoken {
+		  width: 30em;
+		}
+		button {
+		  padding: 3px 20px;
+		}
+		.help {
+		  color: #444;
+		}
+	</style>
+	<script src="options.js"></script>
+</head>
+
+<body>
+
+  <h1 class="centered">
+	<img src="icon_128.png" /><br/>
+	Slack Unread Message Checker Options
+  </h1>
+
+  <div class="centered">
+	<table>
+	  <tr>
+		<td class="lbl"><label for="slack">Your slack domain:</label></td>
+		<td><input type="text" id="slackname" />.slack.com</td>
+	  </tr>
+	  <tr>
+		<td class="lbl"><label for="apitoken">Slack API token:</label></td>
+		<td><input type="text" id="apitoken"/></td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td><button type="button" id="submit">Save</button></td>
+	  </tr>
+	</table>
+	
+	<p class="help">
+	  To get an API token, log in to slack and create a token on this page:
+	  <a href="https://api.slack.com/web">https://api.slack.com/web</a>
+	</p>
+  </div>
+</body>
+</html>
+
+
+
+
